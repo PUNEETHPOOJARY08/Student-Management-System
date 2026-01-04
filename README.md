@@ -61,11 +61,19 @@ cd Student-Management-System
 
 ### 3. Backend Setup
 
+**Windows:**
+```powershell
+cd backend
+.\mvnw.cmd spring-boot:run
+```
+
+**Linux/Mac:**
 ```bash
 cd backend
-mvn clean install
-mvn spring-boot:run
+./mvnw spring-boot:run
 ```
+
+> **Note:** The Maven Wrapper (`mvnw`) is included, so you don't need to install Maven globally. It will download Maven automatically on first run.
 
 The backend will run on `http://localhost:8080`
 
