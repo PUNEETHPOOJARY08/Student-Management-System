@@ -2,8 +2,9 @@
 nixPkgs = ["maven", "jdk17"]
 
 [phases.install]
-cmds = ["cd backend && mvn clean install -DskipTests"]
+cmds = [
+  "mvn clean install -DskipTests"
+]
 
 [start]
-cmd = "cd backend && java -jar target/student-management-system-1.0.0.jar"
-
+cmd = "java -jar target/student-management-system-1.0.0.jar"
